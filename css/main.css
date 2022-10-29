@@ -488,6 +488,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .benefits__text {
@@ -568,7 +569,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .team__container {
