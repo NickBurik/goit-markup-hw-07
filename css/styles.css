@@ -88,30 +88,33 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header-container {
+.page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.page-navigator {
+.navigator {
   display: flex;
   align-items: center;
 }
-.weblogo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--logo-color);
+}
+
+.header__logo {
   margin-right: 93px;
 }
 
-.logo-accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
-.nav-item {
+.menu__item {
   display: block;
   font-weight: 500;
   line-height: 1.14;
@@ -121,21 +124,21 @@ body {
   transition: color 250ms var(--primati-time-function);
 }
 
-.nav-item:last-child {
+.menu__item:last-child {
   margin-right: 0;
 }
 
-.nav-item:hover,
-.nav-item:focus {
+.menu__item:hover,
+.menu__item:focus {
   color: var(--accent-color);
 }
 
-.nav-list {
+.menu {
   display: flex;
   column-gap: 50px;
 }
 
-.nav-list .nav-item.current {
+.menu__item.current {
   color: var(--accent-color);
 }
 
@@ -156,16 +159,16 @@ body {
   border-radius: 2px;
 }
 
-.auth-nav {
+.connect {
   display: flex;
   gap: 50px;
 }
 
-.menu-header-item:last-child {
+.connect__item:last-child {
   margin-right: 0;
 }
-.mail,
-.auth-nav-tel {
+.connect__mail,
+.connect__tel {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -178,21 +181,17 @@ body {
   transition: color 250ms var(--primati-time-function);
 }
 
-.mail:hover,
-.mail:focus {
+.connect__mail:hover,
+.connect__mail:focus {
   color: var(--accent-color);
 }
 
-.auth-nav-tel:hover,
-.auth-nav-tel:focus {
+.connect__tel:hover,
+.connect__tel:focus {
   color: var(--accent-color);
 }
 
-.contact-mail-icon {
-  fill: currentColor;
-}
-
-.contact-phone-icon {
+.connect__icon {
   fill: currentColor;
 }
 
@@ -216,7 +215,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin: auto;
   margin-bottom: 30px;
   font-weight: 900;
@@ -229,7 +228,7 @@ body {
   color: var(--page-bg-color);
 }
 
-.hero-btn {
+.hero__btn {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   display: inline-block;
   margin: 0 auto;
@@ -248,8 +247,8 @@ body {
   transition: background-color 250ms var(--primati-time-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--hover-color-btn);
 }
 /* ------------section-benefits--------------- */
@@ -268,7 +267,7 @@ body {
   flex-basis: calc(100% - 90px / 4);
 }
 
-.benefits-items::before {
+.benefits__items::before {
   display: block;
   content: "";
   height: 120px;
@@ -295,7 +294,7 @@ body {
   background-image: url(../images/astronaut.svg);
 }
 
-.benefits .title {
+.benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -303,7 +302,7 @@ body {
   color: var(--title-text-color);
 }
 
-.benefits .text {
+.benefits__text {
   line-height: 1.71;
 }
 
@@ -319,20 +318,24 @@ body {
   gap: 30px;
 }
 
-.section-title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+  
+}
+
+.section__title--indents {
   margin-bottom: 50px;
 }
 
-.title-works-container {
+.direction__container {
   position: relative;
 }
 
-.title-works-text {
+.direction__text {
   position: absolute;
   width: 100%;
   padding: 27px;
@@ -359,7 +362,7 @@ body {
   gap: 30px;
 }
 
-.team-item {
+.team__item {
   background-color: var(--page-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -367,7 +370,7 @@ body {
   flex-basis: calc(100% - 90px / 4);
 }
 
-.team .title {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -375,23 +378,23 @@ body {
   color: var(--title-text-color);
 }
 
-.title {
+.team__title--indents {
   margin-bottom: 10px;
 }
 
-.team .text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   padding-bottom: 16px;
 }
 
-.titlr-team-container {
+.team__container {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.social-list {
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,11 +402,11 @@ body {
   gap: 10px;
 }
 
-.social-list-icon {
+.social__icon {
   fill: currentColor;
 }
 
-.social-list-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,8 +418,8 @@ body {
     background-color 250ms var(--primati-time-function);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--hover-color);
   color: var(--page-bg-color);
 }
