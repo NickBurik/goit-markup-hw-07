@@ -1,0 +1,106 @@
+.footer {
+    background-color: var(--section-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.oll-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.futer-list-adress {
+    display: block;
+    margin-right: 70px;
+}
+
+.footer .weblogo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--footer-logo-color);
+    margin-right: 0;
+}
+
+.contacts-address {
+    font-style: normal;
+}
+
+.adress-item {
+    display: block;
+}
+
+.footer-list .adress-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address {
+    line-height: 1.71;
+    color: var(--footer-logo-color);
+    transition: color 250ms var(--primati-time-function);
+}
+
+.footer-mail,
+.footer-tel {
+    line-height: 1.71;
+    color: var(--footer-auth-color);
+    transition: color 250ms var(--primati-time-function);
+}
+
+.footer-address:hover,
+.footer-address:focus {
+    color: var(--accent-color);
+}
+
+.footer-mail:hover,
+.footer-mail:focus {
+    color: var(--accent-color);
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--accent-color);
+}
+
+.social-footer-title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-logo-color);
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.footer-icon-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--footer-logo-color);
+    transition: background-color 250ms var(--primati-time-function);
+}
+
+.footer-icon {
+    fill: currentColor;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: var(--accent-color);
+}
